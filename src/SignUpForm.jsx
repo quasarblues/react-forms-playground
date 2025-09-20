@@ -15,7 +15,7 @@ export default function SignUpForm() {
         const newData = e.target.value;
 
         setFormData(currData => {
-            currData[changedData] = e.target.value;
+            currData[changedData] = newData;
             return { ...currData };
         })
     }
