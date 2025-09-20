@@ -18,6 +18,7 @@ export default function SignUpForm() {
             return {
                 ...currData,
                 [changedData]: newData
+                // [e.target.name] = e.target.value
             };
         });
     }
