@@ -15,9 +15,11 @@ export default function SignUpForm() {
         const newData = e.target.value;
 
         setFormData(currData => {
-            currData[changedData] = newData;
-            return { ...currData };
-        })
+            return {
+                ...currData,
+                [changedData]: newData
+            };
+        });
     }
     return (
         <form className="SignUpForm">
