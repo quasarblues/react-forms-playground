@@ -1,0 +1,14 @@
+.UsernameForm {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.UsernameForm input {
+    margin-bottom: 1rem;
+}
+
+.UsernameForm label {
+    margin-right: 100%;
+    margin-bottom: 0.5rem;
+}
