@@ -1,15 +1,16 @@
 import { useState } from "react";
 import NewProductForm from "./NewProductForm";
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ProductList() {
     const [products, setProducts] = useState([
-        { id: 1, name: 'strings', amount: 10 },
-        { id: 2, name: 'picks', amount: 75 }
+        { id: uuidv4(), name: 'strings', amount: 10 },
+        { id: uuidv4(), name: 'picks', amount: 75 }
     ])
 
     const addProduct = (product) => {
         setProducts(currentProducts => (
-            [...currentProducts, { ...product, id: 3 }]
+            [...currentProducts, { ...product, id: uuidv4() }]
         ))
     }
 
