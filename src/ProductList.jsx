@@ -1,5 +1,6 @@
 import { useState } from "react";
-import NewProductForm from "./NewProductForm";
+// import NewProductForm from "./NewProductForm";
+import ValidatedProductForm from "./ValidatedProductForm";
 import { v4 as uuidv4 } from 'uuid';
 
 export default function ProductList() {
@@ -22,7 +23,7 @@ export default function ProductList() {
                     <li key={product.id}>{product.name}- {product.amount}</li>
                 ))}
             </ul>
-            <NewProductForm addProduct={addProduct} />
+            <ValidatedProductForm addProduct={addProduct} />
         </div>
     )
 }
