@@ -1,0 +1,13 @@
+.NewProductForm {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.NewProductForm input {
+    margin-bottom: 1rem;
+}
+
+.NewProductForm label {
+    text-align: left;
+}
