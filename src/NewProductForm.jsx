@@ -19,7 +19,7 @@ export default function NewProductForm({ addProduct }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         addProduct(formData);
-        setFormData({ product: "", quantity: 0 })
+        setFormData({ name: "", amount: 0 });
     }
 
     return (
