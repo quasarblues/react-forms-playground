@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import CookoutForm from "./CookoutForm";
+import RHFCookoutForm from "./RHFCookOutForm";
 
 export default function CookoutList() {
 
@@ -24,6 +25,7 @@ export default function CookoutList() {
                 ))}
             </ul>
             <CookoutForm addGuest={addGuest} />
+            <RHFCookoutForm addGuest={addGuest} />
         </div>
     )
 }
