@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./CookoutForm.css"
 
 export default function CookoutForm({ addGuest }) {
     const [formData, setFormData] = useState({ name: "", food: "" });
@@ -20,7 +21,7 @@ export default function CookoutForm({ addGuest }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <h2>Add a guest!</h2>
+            <h2>Unvalidated</h2>
             <label htmlFor="name">Name:</label>
             <input
                 type="text"
