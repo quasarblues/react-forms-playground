@@ -1,0 +1,15 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.form-group small {
+    text-align: left;
+    color: red;
+}
+
+.CookoutForm label {
+    text-align: left;
+    margin-bottom: 0.25rem;
+}
